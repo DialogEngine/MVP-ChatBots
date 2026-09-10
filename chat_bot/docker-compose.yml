@@ -1,0 +1,9 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: defender
+      POSTGRES_DB: chat_bot_db
+    ports:
+      - "5432:5432"
